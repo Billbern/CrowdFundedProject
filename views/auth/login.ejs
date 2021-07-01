@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/auth.css">
+    <title><%=  title %></title>
+</head>
+<body>
+    <div class="row auth_container">
+        <div class="col-sm-12 col-md-6 col-lg-7">
+            <div class="w-100 h-100 bg_container" style="background-image: url('/imgs/auth-background.jpg');">
+            </div>
+            <p style="display: none;">Photo by Mikechie Esparagoza from Pexels</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-5 bg-white">
+            <div class="auth_form">
+                <form class="form" action="/auth/login" method="post">
+                    <div>
+                        <h3>Login Into Account</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div>
+                                <input type="text" name="user_name" id="userName" placeholder="Username/Email" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div>
+                                <input type="password" name="user_pass" id="userPass" placeholder="Password" class="form-control" />
+                                <div class="form-text d-flex justify-content-end">
+                                    <p class="small"><a href="/auth/forgotten">Forgotten password ?</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex justify-content-center">
+                                <input type="submit" value="login" class="btn btn-primary px-5"/>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div>
+                                <p class="small">if you don't have an account yet <a href="/auth/register">register here</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
